@@ -1,0 +1,40 @@
+{
+  "name": "krishak-g-backend",
+  "version": "1.0.0",
+  "description": "Backend service for Krishak-G",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test:voice": "ts-node src/voice/voiceEngineTest.ts",
+    "test:session": "ts-node src/orchestrator/sessionTest.ts",
+    "test:interrupt": "ts-node src/orchestrator/interruptionTest.ts",
+    "test:multilingual": "ts-node src/orchestrator/multilingualTest.ts",
+    "test:stt": "ts-node src/orchestrator/sttPipelineTest.ts",
+    "list:hindi-voices": "ts-node src/voice/listHindiVoices.ts",
+    "test:real-data": "ts-node src/services/realDataTest.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.15.0",
+    "mongoose": "^8.10.1",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.13.5",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

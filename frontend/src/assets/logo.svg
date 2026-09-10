@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wheat stalk -->
+  <g fill="url(#g)">
+    <!-- Stem -->
+    <rect x="97.5" y="32" width="5" height="140" rx="2.5"/>
+
+    <!-- Seed head -->
+    <ellipse cx="100" cy="27" rx="7" ry="11"/>
+
+    <!-- Grain pair 1 (top) -->
+    <path d="M97,54 C88,46 76,40 70,34 C77,28 89,38 97,46 Z"/>
+    <path d="M103,54 C112,46 124,40 130,34 C123,28 111,38 103,46 Z"/>
+
+    <!-- Grain pair 2 (middle) -->
+    <path d="M97,84 C86,74 71,66 63,58 C71,51 86,64 97,76 Z"/>
+    <path d="M103,84 C114,74 129,66 137,58 C129,51 114,64 103,76 Z"/>
+
+    <!-- Grain pair 3 (bottom) -->
+    <path d="M97,114 C84,102 67,92 57,82 C67,74 84,90 97,104 Z"/>
+    <path d="M103,114 C116,102 133,92 143,82 C133,74 116,90 103,104 Z"/>
+  </g>
+
+  <!-- Sound waves — left side -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <path d="M54,78 C38,90 38,110 54,122" stroke-width="4.5" opacity="0.95"/>
+    <path d="M42,66 C20,84 20,116 42,134" stroke-width="4" opacity="0.6"/>
+    <path d="M30,56 C4,78 4,122 30,144" stroke-width="3.5" opacity="0.28"/>
+  </g>
+
+  <!-- Sound waves — right side -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <path d="M146,78 C162,90 162,110 146,122" stroke-width="4.5" opacity="0.95"/>
+    <path d="M158,66 C180,84 180,116 158,134" stroke-width="4" opacity="0.6"/>
+    <path d="M170,56 C196,78 196,122 170,144" stroke-width="3.5" opacity="0.28"/>
+  </g>
+</svg>
